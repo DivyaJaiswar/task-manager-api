@@ -1,0 +1,162 @@
+openapi: 3.0.0
+info:
+  title: Task Manager API
+  version: 1.0.0
+
+paths:
+
+  /users:
+    get:
+      summary: Get all users
+      responses:
+        '200':
+          description: List of users
+
+    post:
+      summary: Create a user
+      requestBody:
+        required: true
+      responses:
+        '201':
+          description: User created
+
+  /users/{id}:
+    get:
+      summary: Get a user by ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+      responses:
+        '200':
+          description: User found
+        '404':
+          description: User not found
+
+    put:
+      summary: Update a user
+      parameters:
+        - name: id
+          in: path
+          required: true
+      responses:
+        '200':
+          description: User updated
+        '404':
+          description: User not found
+
+    delete:
+      summary: Delete a user
+      parameters:
+        - name: id
+          in: path
+          required: true
+      responses:
+        '200':
+          description: User deleted
+        '404':
+          description: User not found
+
+  /projects:
+    get:
+      summary: Get all projects
+      responses:
+        '200':
+          description: List of projects
+
+    post:
+      summary: Create a project
+      requestBody:
+        required: true
+      responses:
+        '201':
+          description: Project created
+
+  /projects/{id}:
+    get:
+      summary: Get a project by ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+      responses:
+        '200':
+          description: Project found
+        '404':
+          description: Project not found
+
+    put:
+      summary: Update a project
+      parameters:
+        - name: id
+          in: path
+          required: true
+      responses:
+        '200':
+          description: Project updated
+        '404':
+          description: Project not found
+
+    delete:
+      summary: Delete a project
+      parameters:
+        - name: id
+          in: path
+          required: true
+      responses:
+        '200':
+          description: Project deleted
+        '404':
+          description: Project not found
+
+  /tasks:
+    get:
+      summary: Get all tasks (supports pagination and filtering)
+      responses:
+        '200':
+          description: List of tasks
+
+    post:
+      summary: Create a task
+      requestBody:
+        required: true
+      responses:
+        '201':
+          description: Task created
+
+  /tasks/{id}:
+    get:
+      summary: Get a task by ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+      responses:
+        '200':
+          description: Task found
+        '404':
+          description: Task not found
+
+    put:
+      summary: Update a task
+      parameters:
+        - name: id
+          in: path
+          required: true
+      responses:
+        '200':
+          description: Task updated
+        '404':
+          description: Task not found
+
+    delete:
+      summary: Delete a task
+      parameters:
+        - name: id
+          in: path
+          required: true
+      responses:
+        '200':
+          description: Task deleted
+        '404':
+          description: Task not found
