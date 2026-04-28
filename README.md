@@ -2,7 +2,6 @@
 
 A RESTful API built using Node.js and TypeScript for managing tasks. This project demonstrates backend development concepts including API design, database integration, and structured code organization.
 
----
 
 ## Tech Stack
 
@@ -13,7 +12,6 @@ A RESTful API built using Node.js and TypeScript for managing tasks. This projec
 * **Documentation:** OpenAPI (YAML)
 * **Tools:** Git, Postman
 
----
 
 ## Features
 
@@ -23,7 +21,6 @@ A RESTful API built using Node.js and TypeScript for managing tasks. This projec
 * API documentation using OpenAPI specification
 * Modular and maintainable backend structure
 
----
 
 ## Key Highlights
 
@@ -33,13 +30,11 @@ A RESTful API built using Node.js and TypeScript for managing tasks. This projec
 * Structured the application for scalability and maintainability
 * Tested API endpoints using Postman
 
----
 
 ## API Documentation
 
 API endpoints are defined in the `openapi.yaml` file.
 
----
 
 ## How to Run
 
@@ -55,13 +50,11 @@ bun install
 bun run index.ts
 ```
 
----
 
 ## Status
 
 Completed as part of academic coursework and used to demonstrate backend API development skills.
 
----
 
 ## Author
 
